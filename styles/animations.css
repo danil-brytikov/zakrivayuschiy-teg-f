@@ -12,3 +12,35 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes moveObject {
+  from {
+    left: -15px;
+  }
+
+  to {
+    left: -10px;
+  }
+}  
+
+@keyframes opacityObject {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleObject {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.3);
+    }
+}
+  
+
+  
