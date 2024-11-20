@@ -21,7 +21,7 @@
     --blend: #fff;
     
     --heart-contour: #000;
-  }
+}
   
   :root.theme-dark {
     --background-color: #000;
