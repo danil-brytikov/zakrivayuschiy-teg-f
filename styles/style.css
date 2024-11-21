@@ -114,7 +114,7 @@
   content: '▶';
   position: absolute;
   pointer-events: none;
-  animation: moveObject 0.7s ease-in-out infinite alternate;
+  animation: moveObject 0.5s ease-in-out infinite alternate;
   opacity: 0.6;
   right: 95%;
   margin-right: 6px;
@@ -145,12 +145,13 @@
 
 .item__name {
   width: 100%;
-  min-height: 33px;
+  line-height: 21.78px;
   font-variation-settings: 'wght' var(--accent-font-weight);
   border-block-end: 2px solid var(--accent-color);
   font-size: 18px;
   padding-left: 10px;
   padding-top: 4px;
+  padding-block-end: 6px;
 }
 
 .image__wrapper {
@@ -170,6 +171,9 @@
   font-weight: 400;
   mix-blend-mode: hard-light;
   opacity: 0.5;
+  text-transform: uppercase;
+  text-shadow: -1px 0 var(--shadow-clr), 0 1px var(--shadow-clr), 1px 0 var(--shadow-clr),
+  0 -1px var(--shadow-clr);
 }
 
 @supports (-webkit-text-stroke: 1px white) {
@@ -182,11 +186,12 @@
 .card__image {
   width: 100%;
   height: 100%;
+  object-position: right;
+  object-fit: cover;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card_text {
-  border-top: 2px solid var(--accent-color);
-  margin-top: -4px;
   padding: 27px 24px;
   font-weight: 465;
 }
@@ -200,7 +205,6 @@
   margin-inline-start: auto;
   margin-block-end: 25px;
   margin-inline-end: 25px;
-  height: 38px;
   width: max-content;
   gap: 4px;
 }
@@ -344,6 +348,10 @@
   height: 38px;
 }
 
+.modal__button-text {
+  text-transform: uppercase;
+}
+
 /*трансформации сердечка*/
 
 .like-icon.is-liked .heart {
@@ -447,6 +455,11 @@
 
   .item__name {
     padding: 4px 10px 6px;
+  }
+
+  .image__lable {
+    inset-inline-end: 12px;
+    inset-block-start: 23px;
   }
 
   .card_text {
